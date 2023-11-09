@@ -13,6 +13,10 @@ start_btn.addEventListener("click",()=>{
     stop_btn.removeAttribute("disabled");
     stop_btn.style.cursor = "pointer";
     stop_btn.style.setProperty('--clr', '#0FF0FC');
+
+    sec_ele.style.color = '#39FF14';
+    min_ele.style.color = '#39FF14';
+    hr_ele.style.color = '#39FF14';
     
     pause_btn.removeAttribute("disabled");
     pause_btn.style.cursor = "pointer";
@@ -53,6 +57,10 @@ start_btn.addEventListener("click",()=>{
         stop_btn.setAttribute("disabled",'');
         stop_btn.style.cursor = "not-allowed";
         stop_btn.style.setProperty('--clr', '#525252');
+
+        sec_ele.style.color = '#0FF0FC';
+        min_ele.style.color = '#0FF0FC';
+        hr_ele.style.color = '#0FF0FC';
     })
 
     pause_btn.addEventListener("click",()=>{
@@ -65,6 +73,10 @@ start_btn.addEventListener("click",()=>{
         start_btn.removeAttribute('disabled'); 
         start_btn.style.cursor = "pointer";
         start_btn.style.setProperty('--clr', '#39FF14');
+
+        sec_ele.style.color = '#FF0000';
+        min_ele.style.color = '#FF0000';
+        hr_ele.style.color = '#FF0000';
     })
 
 })
